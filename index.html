@@ -1,0 +1,412 @@
+<html>
+<head>
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <style>
+     body{
+         font-family: 'poppins', sans-serif;
+         background: #E5E5E5;
+     }
+     .container{
+         width: 595px;
+         height: 858px;
+         background-color: #fff;
+         margin: auto;
+         
+     }
+     .main{
+         width: 595px;
+/*         background: cyan;*/
+         height: auto;
+     }
+     .left-main{
+         width: 35%;
+         height: 520px;
+         float: left;
+         background: #181378;
+         margin-top: 10px;
+         margin-left: 12px; 
+     }
+     .profile{
+         width: 141px;
+         height: 145px;
+         background: url('omid-armin-qFKIqEaaw5A-unsplash.jpg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin: 15px auto;
+     }
+     .name, .position{
+         width: 100%;
+         text-align: center;
+         color: #fff;
+         font-size: 16px;
+         font-weight: 700;
+     }
+     .position{
+         font-size: 14px;
+         margin-top: 5px;
+     }
+     .nmc-main{
+         width: 100%;
+         height: auto;
+         margin-top: 34px;
+     }
+     .nmc, .na{
+         width: 100%;
+         font-size: 13px;
+         color: #fff;
+         font-weight: 400;
+         padding-left: 12px;
+         padding-top: 5px;
+     }
+     .na{
+         font-weight: 700;
+         font-size: 16px;
+         padding-top: 6px;
+     }
+     p.confirm{
+         width: 95%;
+         font-size: 12px;
+         color: #fff;
+         font-weight: 400;
+         padding: 10px;
+         margin: 20px auto;
+     }
+     
+     .right-main{
+         width: 61%;
+         float: left;
+         height: 520px;
+/*         background: red;*/
+         margin-top: 10px;
+     }
+     .client-logo{
+         width: 100%;
+         height: auto;
+/*         background: yellow;*/
+         float: right;
+         margin-top: 16px;
+     }
+     .client-logo img{
+         max-width: 200px;
+         max-height: 150px;
+/*         background: yellow;*/
+         float: right;
+     }
+     .address{
+         float: right;
+         width: 100%;
+         text-align: right;
+         font-size: 12px;
+         margin: 0px;
+         padding: 0px;
+     }
+     .address b{
+         color: #181378;
+     }
+     .right-bar{
+         width: 100%;
+         height: 3px;
+         background: #181378;
+         float: right;
+         margin-top: 5px; 
+     }
+     .left-bar{
+         width: 10%;
+         height: 3px;
+         background: #fff;
+         float: right;
+         margin-top: -15.4px;
+     }
+     
+     .heading{
+         color: #181378;
+         font-weight: 700;
+         font-size: 14px;
+         padding-left: 16px;
+         line-height: 47px;
+     }
+     .disclous{
+         font-weight: 400;
+         font-size: 12px;
+         margin-top: -20px;
+     }
+     .disclous p{
+         padding-left: 16px;
+     }
+     .col{
+         width: 33%;
+         float: left;
+         margin-top: -6px;
+     }
+     .dtr{
+         padding-left: 16px;
+         font-size: 12px;
+         font-weight: 400;
+         margin-top: 5px;
+     }
+     .d1{
+         width: 100%;
+         height: 20px;
+     }
+     .d2{
+         width: 100%;
+         color: #545252;
+     }
+     .table-main{
+         width: 100%;
+         float: left;
+         height: auto;
+     }
+     .heading1{
+         width: 95%;
+         height: 35px;
+         color: #181378;
+         font-weight: 700;
+         font-size: 14px;
+         padding-left: 16px;
+         line-height: 47px;
+         margin-top: 10px;
+     }
+     .table-head{
+         width: 95%;
+         height: 29px;
+/*         background: cyan;*/
+         margin-left: 16px;
+         padding-top: 6px;
+         border-bottom: 1px solid #181378;
+     }
+     .sub-head{
+         display: inline-block;
+         font-size: 14px;
+         font-weight: 700;
+     }
+     .table-body{
+         width: 95%;
+         margin-left: 16px;
+         font-size: 12px;
+     }
+     .disdetail{
+         font-weight: 400;
+         float: left;
+     }
+     .dis, .utake, .expaired, .issued, .nill{
+         margin-top: 8px;
+     }
+     .taken, .exp, .issue, .remark{
+         float: left;
+         width: 100px;
+         text-align: center;
+     }
+
+     
+     
+     @media print{
+
+     .container{
+         width: 100%;
+         height: 858px;
+         background-color: #fff;
+         margin: auto;
+         
+     }
+     .left-main{
+         width: 35%;
+         height: 520px;
+         float: left;
+         background: #181378;
+         margin-top: 10px;
+         margin-left: 12px; 
+         -webkit-print-color-adjust:exact;
+     }
+     .profile{
+         width: 141px;
+         height: 145px;
+         background: url('omid-armin-qFKIqEaaw5A-unsplash.jpg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin: 15px auto;
+         -webkit-print-color-adjust:exact;
+     }
+     .right-bar {
+         width: 100%;
+         height: 3px;
+         background: #181378;
+         float: right;
+         margin-top: 5px;
+         -webkit-print-color-adjust:exact;
+     }
+     .left-bar{
+         width: 10%;
+         height: 3px;
+         background: #fff;
+         float: right;
+         margin-top: -15.4px;
+     }   
+     }
+ </style>
+</head>
+<body>
+   <div class="container">
+     <div class="main">
+      <div class="left-main">
+        <div class="profile"></div>
+        <div class="left-bar"></div>
+        <div class="name">Rosa Maria Alexander</div>
+        <div class="position">Health Care Assistant</div>
+        <div class="nmc-main">
+          <div class="nmc">NMC PIN No. (if applicable) </div>
+          <div class="na">N / A</div>
+
+          <div class="nmc">Renewal Date. (if applicable) </div>
+          <div class="na">N / A</div>
+        </div>  
+        <p class="confirm">
+          I confirm that the following information and document shave been obtained in respect of the above named person.
+        </p>
+      </div> 
+      <div class="right-main">
+        <div class="client-logo"><img src="firstcare.png"/></div>
+        <div class="address">
+          <p style="margin: 0px;">
+            West Country Windows (Double Glazing) Ltd,<br>
+                          36 Goldcroft,South Somerset,<br>
+                                    BA21 4DH, England.<br>
+              <b>Web:</b> www.20x.demo.io  <b>Tel:</b> 06263014600
+          </p>
+        </div>
+        <div class="right-bar"></div>
+          
+        <div class="heading">Disclosure Barrinag Service / Proof of Identity</div>
+        <div class="disclous">
+        <p style="line-height: 14.06px;">
+         Firstcare 24 Ltd, is a registered body and therefore legally obliged to carry out an enhanced disclosure on all applicants in accordance with  the Rehabilitation of Offenders Act 
+         1974. The abovecandidate has undergone a full enhanced disclosure and a positive employment decision has been made in line with our policies and procedures. In accordance with the DBS (CRB) procedure Firstcare24 Ltd does not store a copy of the DBS (CRB) but we can provide you with the 
+         reference number and date of the DBS (CRB).    
+        </p>
+        <div class="col">
+           <div class="dtr" style="margin-top: 0px;">
+           <span class="d1">Right to Work:</span><br> 
+           <span class="d2">UK</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">CRB/DBS Type:</span><br> 
+           <span class="d2">Enhanced</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">NI Number:</span><br> 
+           <span class="d2">0zhc126</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">DBS Result:</span><br> 
+           <span class="d2">Clear</span>
+           </div>
+        </div>
+        <div class="col">
+           <div class="dtr" style="margin-top: 0px;">
+           <span class="d1">DBS Number:</span> <br>
+           <span class="d2">015541665</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">Driving License:</span> <br>
+           <span class="d2">YES</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">Issue Date:</span> <br>
+           <span class="d2">09-04-2021</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">Covide Vaccination1:</span> <br>
+           <span class="d2">value</span>
+           </div>
+        </div>
+        <div class="col">
+           <div class="dtr" style="margin-top: 0px;">
+           <span class="d1">Proof of Address</span> <br>
+           <span class="d2">YES</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">Expairy Date:</span> <br>
+           <span class="d2">09-04-2022</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">Reference:</span> <br>
+           <span class="d2">YES</span>
+           </div>
+           <div class="dtr">
+           <span class="d1">Covide Vaccination2:</span> <br>
+           <span class="d2">value</span>
+           </div>
+        </div>
+
+        </div>
+      </div>
+        
+      <div class="table-main">
+         <div class="heading1">QUALIFICATION AND TRAININGS</div>
+         <div class="table-head">
+          <div class="sub-head" style="width: 135px;">Description</div>
+          <div class="sub-head" style="width: 100px;">Undertaken</div>
+          <div class="sub-head" style="width: 100px;">Issue Date</div>
+          <div class="sub-head" style="width: 100px;">Expairy Date</div>
+          <div class="sub-head" style="width: 100px;">Remark</div>
+         </div>
+         <div class="table-body">
+          <div class="disdetail" style="width: 135px;">
+             <div class="dis">Moving & Handaling</div>
+             <div class="dis">First Aid & Basic Life Support</div>
+             <div class="dis">COSHH</div>
+             <div class="dis">Equality & Diversity</div>
+             <div class="dis">Health & Safety</div>
+             <div class="dis">Food Hygiene</div>
+             <div class="dis">Fluid & Nutrition</div>
+             <div class="dis">Infection Prevention</div>
+          </div>
+          <div class="taken">
+             <div class="utake">Yes</div>
+             <div class="utake" style="height:38px;">Yes</div>
+             <div class="utake">Yes</div>
+             <div class="utake">Yes</div>
+             <div class="utake">Yes</div>
+             <div class="utake">Yes</div>
+             <div class="utake">Yes</div>
+             <div class="utake">Yes</div>
+          </div>
+          <div class="issue">
+             <div class="issued">09-04-2020</div>
+             <div class="issued" style="height:38px;">09-04-2020</div>
+             <div class="issued">09-04-2020</div>
+             <div class="issued">09-04-2020</div>
+             <div class="issued">09-04-2020</div>
+             <div class="issued">09-04-2020</div>
+             <div class="issued">09-04-2020</div>
+             <div class="issued">09-04-2020</div>
+          </div>
+          <div class="exp">
+             <div class="expaired">09-04-2021</div>
+             <div class="expaired" style="height:38px;">09-04-2021</div>
+             <div class="expaired">09-04-2021</div>
+             <div class="expaired">09-04-2021</div>
+             <div class="expaired">09-04-2021</div>
+             <div class="expaired">09-04-2021</div>
+             <div class="expaired">09-04-2021</div>
+             <div class="expaired">09-04-2021</div>
+          </div>
+          <div class="remark">
+             <div class="nill">Nill</div>
+             <div class="nill" style="height:38px;">Nill</div>
+             <div class="nill">Nill</div>
+             <div class="nill">Nill</div>
+             <div class="nill">Nill</div>
+             <div class="nill">Nill</div>
+             <div class="nill">Nill</div>
+             <div class="nill">Nill</div>
+          </div>
+         </div>
+      </div>
+     </div>
+   </div> 
+</body>
+</html>
