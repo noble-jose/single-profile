@@ -71,7 +71,7 @@
          font-weight: 700;
          color: #181378;
          line-height: 18.75px;
-         padding-top: 7px;
+         padding-top: 12px;
      }
      /* NMC - Section */
     .nmc-main{
@@ -99,18 +99,11 @@
          float: left;
       }
      .heading{
-         width: 100%;
+         width: 95%;
          padding-left: 16px;
          font-size: 16px;
          font-weight: 700;
-         margin-top: 18px;
-     }
-     .heading1{
-         width: 100%;
-         padding-left: 16px;
-         font-size: 16px;
-         font-weight: 700;
-         margin-top: 15px;
+         margin-top: 20px;
      }
      .clous{
          width: 100%;
@@ -136,64 +129,105 @@
      }
      .col p{
          height: 23px;
+         padding-left: 4px;
      }
      .col p span{
          color: #545252;
      }
-      
-      
+    
       .table-main{
           width: 100%;
+          height: auto;
           float: left;
-          height: 350px;
       }
-      .table-main{
-         width: 100%;
-         float: left;
-         height: auto;
-     }
-     .table-head{
-         width: 95%;
-         height: 29px;
-         margin-left: 16px;
-         margin-top: 10px;
-         padding-top: 6px;
-         border-bottom: 1px solid #000;
-     }
-     .sub-head{
-         display: inline-block;
-         font-size: 14px;
-         font-weight: 500;
-     }
-     .table-body{
-         width: 95%;
-         margin-left: 16px;
-         font-size: 12px;
-         font-weight: 400;
-     }
-    .disdetail, .taken, .issue, .exp, .remark{
-         float: left; 
-    }
-    .dis, .utake, .issued, .expaired, .nill{
+      table{
+          width: 98%;
+          padding-left: 16px;
+          margin-top: 10px;
+      }
+      th,td{
           text-align: left;
+          font-size: 12px;
+          font-weight: 400;
+      }
+      .training-tb td{
+          height: 28px;
       }
       
-     @page{
-       margin: 0;
-    }
+ 
+      
+      @page{
+          margin: 0 0 0 6em;
+          size: A4 portrait;
+      }
       @media print{
-      .main-head{
-         width: 100%;
-         height: 104px;
-         background: #22A0C8;
-         -webkit-print-color-adjust:exact;
-     }
-     .shade{
-         width: 100%;
-         height: auto;
-         background: rgba(240, 239, 239, 0.5);
-         float: left;
-         -webkit-print-color-adjust:exact;
+          body{
+              background: #fff;
+              -webkit-print-color-adjust:exact;
+          }
+          .container{
+              width: 100%;
+              height:auto;
+          }
+          .nmc-main {
+                width: 100%;
+                height: 70px;
+                float: left;
+          }
+          .clientlog-main {
+              width: 100%;
+              height: 87px;
+          }
+         .clientlog-main img {
+             max-width: 250px;
+             max-height: 250px;
+             margin-top: -20px;
+             float: left;
+             padding-left: 14px;
+         }
+        .fname {
+            float: right;
+            margin-right: 14px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #181378;
+            line-height: 18.75px;
+            padding-top: 18px;
+        }
+          .na {
+            width: 30%;
+            height: 40px;
+            float: left;
+            padding-left: 16px;
+            font-size: 13px;
+            padding-top: 7px;
+          }
+          .shade {
+            width: 100%;
+            height: 320px;
+            background: rgba(240, 239, 239, 0.5);
+            float: left;
+          }
+
+         .clous p {
+             padding-left: 16px;
+             padding-right: 16px;
+             padding-top: 0px;
+             font-size: 12px;
+             font-weight: 400;
+             line-height: 20px;
+             text-align: justify;
+             margin-top: 10px;
+         }
+        .heading1 {
+            width: 100%;
+            padding-left: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        .erd{
+          height: 15px;
       }
       }
   </style>  
@@ -249,13 +283,13 @@
            <p>DBS Number:<span> 015541665</span></p> 
            <p>Driving License:<span> YES</span></p> 
            <p>Issue Date:<span> 09-04-2021</span></p> 
-           <p>CovideVaccination1:<span>value</span></p>     
+           <p>Covid Vaccination1:<span>value</span></p>     
          </div>
          <div class="col">
            <p>Proof of Address:<span> YES</span></p> 
            <p>Expairy Date:<span> 09-04-2022</span></p> 
            <p>Reference:<span> YES</span></p> 
-           <p>CovideVaccination2:<span>value</span></p>  
+           <p>Covid Vaccination2:<span>value</span></p>  
          </div>
         </div>
         </div>
@@ -263,66 +297,74 @@
         
         
       <div class="table-main">
-        <div class="heading1">QUALIFICATION AND TRAININGS</div>
-         <div class="table-head">
-          <div class="sub-head" style="width: 135px;">Description</div>
-          <div class="sub-head" style="width: 100px;text-align:center;">Undertaken</div>
-          <div class="sub-head" style="width: 100px;text-align:center;">Issue Date</div>
-          <div class="sub-head" style="width: 100px;text-align:center;">Expairy Date</div>
-          <div class="sub-head" style="width: 100px;text-align:center;">Remark</div>
-         </div>
-         <div class="table-body">
-          <div class="disdetail" style="width: 135px;">
-             <div class="dis" style="margin-top: 8px;">Moving & Handaling</div>
-             <div class="dis" style="margin-top: 8px;">First Aid & Basic Life Support</div>
-             <div class="dis" style="margin-top: 8px;">COSHH</div>
-             <div class="dis" style="margin-top: 8px;">Equality & Diversity</div>
-             <div class="dis" style="margin-top: 8px;">Health & Safety</div>
-             <div class="dis" style="margin-top: 8px;">Food Hygiene</div>
-             <div class="dis" style="margin-top: 8px;">Fluid & Nutrition</div>
-             <div class="dis" style="margin-top: 8px;">Infection Prevention</div>
-          </div>
-          <div class="taken" style="width: 100px;margin-left: 5px;">
-             <div class="utake" style="margin-top: 8px;text-align:center;">Yes</div>
-             <div class="utake" style="height:38px;margin-top: 8px;text-align:center;">Yes</div>
-             <div class="utake" style="text-align: center;">Yes</div>
-             <div class="utake" style="margin-top: 13px;text-align:center;">Yes</div>
-             <div class="utake" style="margin-top: 13px;text-align:center;">Yes</div>
-             <div class="utake" style="margin-top: 7px;text-align:center;">Yes</div>
-             <div class="utake" style="margin-top: 7px;text-align:center;">Yes</div>
-             <div class="utake" style="margin-top: 7px;text-align:center;">Yes</div>
-          </div>
-          <div class="issue" style="width: 100px;margin-left: 4px;">
-             <div class="issued" style="margin-top: 8px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="height:38px;margin-top: 8px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="text-align: center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 13px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 13px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 7px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 7px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 7px;text-align:center;">09-04-2020</div>
-          </div>
-          <div class="exp" style="width: 100px;margin-left: 4px;">
-             <div class="expaired" style="margin-top: 8px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="height:38px;margin-top: 8px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="text-align: center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 13px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 13px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 7px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 7px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 7px;text-align:center;">09-04-2021</div>
-          </div>
-          <div class="remark" style="width: 100px;margin-left: 4px;">
-             <div class="nill" style="margin-top: 8px;text-align:center;">Nill</div>
-             <div class="nill" style="height:38px;margin-top: 8px;text-align:center;">Nill</div>
-             <div class="nill" style="text-align: center;">Nill</div>
-             <div class="nill" style="margin-top: 13px;text-align:center;">Nill</div>
-             <div class="nill" style="margin-top: 13px;text-align:center;">Nill</div>
-             <div class="nill" style="margin-top: 7px;text-align:center;">Nill</div>
-             <div class="nill" style="margin-top: 7px;text-align:center;">Nill</div>
-             <div class="nill" style="margin-top: 7px;text-align:center;">Nill</div>
-          </div>
-         </div>
+        <div class="heading">QUALIFICATION AND TRAININGS</div>
+        <table class="training-tb">
+          <tr>
+            <th style="font-size: 13px;">Description</th>
+            <th style="font-size: 13px;">Undertaken</th>
+            <th style="font-size: 13px;">Issue Date</th>
+            <th style="font-size: 13px;">Expairy Date</th>
+            <th style="font-size: 13px;">Remark</th>
+          </tr>
+          <tr style="width:267%;height: 1px;background: black;display: block;"></tr>
+          <tr>
+            <td>Moving & Handaling</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>First Aid & Basic Life Support</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>COSHH</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Equality & Diversity</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Health & Safety</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Fluid & Nutrition</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Fluid & Nutrition</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Infection Prevention</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+
+        </table>
       </div>
     </div>
 </body>
