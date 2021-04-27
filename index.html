@@ -15,7 +15,7 @@
          
      }
      .main{
-         width: 595px;
+         width: 100%;
 /*         background: cyan;*/
          height: auto;
      }
@@ -127,6 +127,13 @@
          padding-left: 16px;
          line-height: 47px;
      }
+     .heading1{
+         color: #181378;
+         font-weight: 700;
+         font-size: 14px;
+         padding-left: 16px;
+         margin-top: 15px;
+     }
      .disclous{
          font-weight: 400;
          font-size: 12px;
@@ -159,71 +166,57 @@
          float: left;
          height: auto;
      }
-     .heading1{
-         width: 95%;
-         height: 35px;
-         color: #181378;
-         font-weight: 700;
-         font-size: 14px;
-         padding-left: 16px;
-         line-height: 47px;
-         margin-top: 10px;
-     }
       .table-main{
           width: 100%;
+          height: auto;
           float: left;
-          height: 350px;
       }
-      .table-main{
-         width: 100%;
-         float: left;
-         height: auto;
-     }
-     .table-head{
-         width: 95%;
-         height: 29px;
-         margin-left: 16px;
-         margin-top: 10px;
-         padding-top: 6px;
-         border-bottom: 1px solid #000;
-     }
-     .sub-head{
-         display: inline-block;
-         font-size: 14px;
-         font-weight: 500;
-     }
-     .table-body{
-         width: 95%;
-         margin-left: 16px;
-         font-size: 12px;
-         font-weight: 400;
-     }
-    .disdetail, .taken, .issue, .exp, .remark{
-         float: left; 
-    }
-    .dis, .utake, .issued, .expaired, .nill{
+      table{
+          width: 98%;
+          padding-left: 16px;
+          margin-top: 10px;
+      }
+      th,td{
           text-align: left;
+          font-size: 12px;
+          font-weight: 400;
       }
+      .training-tb td{
+          height: 28px;
+      }
+     
 
-     
-     
+     @page{
+          margin: 0;
+          size: A4 portrait;
+      }
+      
      @media print{
-
+     body{
+         background: #fff;
+         -webkit-print-color-adjust:exact;
+     }
      .container{
          width: 100%;
-         height: 858px;
+         height: auto;
          background-color: #fff;
          margin: auto;
          
      }
      .left-main{
-         width: 35%;
+         width: 30%;
          height: 520px;
          float: left;
          background: #181378;
          margin-top: 10px;
          margin-left: 12px; 
          -webkit-print-color-adjust:exact;
+     }
+     .right-main{
+         width: 66%;
+         float: left;
+         height: 520px;
+         margin-top: 10px;
      }
      .profile{
          width: 141px;
@@ -249,7 +242,51 @@
          background: #fff;
          float: right;
          margin-top: -15.4px;
-     }   
+     }  
+.nmc, .na {
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+p.confirm {
+    width: 95%;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 12px;
+    margin: 20px auto;
+}
+.heading {
+    color: #181378;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 16px;
+    line-height: 57px;
+}
+.heading1 {
+    color: #181378;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 16px;
+    margin-top: 25px;
+}  
+
+.col {
+    width: 33%;
+    float: left;
+    margin-top: 10px;
+}
+.disclous {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: -10px;
+}
+table.training-tb{
+    margin-top: 20px;         
+}
      }
  </style>
 </head>
@@ -350,65 +387,72 @@
       </div>
       <div class="table-main">
         <div class="heading1">QUALIFICATION AND TRAININGS</div>
-         <div class="table-head">
-          <div class="sub-head" style="width: 135px;">Description</div>
-          <div class="sub-head" style="width: 100px;text-align:center;">Undertaken</div>
-          <div class="sub-head" style="width: 100px;text-align:center;">Issue Date</div>
-          <div class="sub-head" style="width: 100px;text-align:center;">Expairy Date</div>
-          <div class="sub-head" style="width: 100px;text-align:center;">Remark</div>
-         </div>
-         <div class="table-body">
-          <div class="disdetail" style="width: 135px;">
-             <div class="dis" style="margin-top: 8px;">Moving & Handaling</div>
-             <div class="dis" style="margin-top: 8px;">First Aid & Basic Life Support</div>
-             <div class="dis" style="margin-top: 8px;">COSHH</div>
-             <div class="dis" style="margin-top: 8px;">Equality & Diversity</div>
-             <div class="dis" style="margin-top: 8px;">Health & Safety</div>
-             <div class="dis" style="margin-top: 8px;">Food Hygiene</div>
-             <div class="dis" style="margin-top: 8px;">Fluid & Nutrition</div>
-             <div class="dis" style="margin-top: 8px;">Infection Prevention</div>
-          </div>
-          <div class="taken" style="width: 100px;margin-left: 5px;">
-             <div class="utake" style="margin-top: 8px;text-align:center;">Yes</div>
-             <div class="utake" style="height:38px;margin-top: 8px;text-align:center;">Yes</div>
-             <div class="utake" style="text-align: center;">Yes</div>
-             <div class="utake" style="margin-top: 13px;text-align:center;">Yes</div>
-             <div class="utake" style="margin-top: 13px;text-align:center;">Yes</div>
-             <div class="utake" style="margin-top: 7px;text-align:center;">Yes</div>
-             <div class="utake" style="margin-top: 7px;text-align:center;">Yes</div>
-             <div class="utake" style="margin-top: 7px;text-align:center;">Yes</div>
-          </div>
-          <div class="issue" style="width: 100px;margin-left: 4px;">
-             <div class="issued" style="margin-top: 8px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="height:38px;margin-top: 8px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="text-align: center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 13px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 13px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 7px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 7px;text-align:center;">09-04-2020</div>
-             <div class="issued" style="margin-top: 7px;text-align:center;">09-04-2020</div>
-          </div>
-          <div class="exp" style="width: 100px;margin-left: 4px;">
-             <div class="expaired" style="margin-top: 8px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="height:38px;margin-top: 8px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="text-align: center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 13px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 13px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 7px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 7px;text-align:center;">09-04-2021</div>
-             <div class="expaired" style="margin-top: 7px;text-align:center;">09-04-2021</div>
-          </div>
-          <div class="remark" style="width: 100px;margin-left: 4px;">
-             <div class="nill" style="margin-top: 8px;text-align:center;">Nill</div>
-             <div class="nill" style="height:38px;margin-top: 8px;text-align:center;">Nill</div>
-             <div class="nill" style="text-align: center;">Nill</div>
-             <div class="nill" style="margin-top: 13px;text-align:center;">Nill</div>
-             <div class="nill" style="margin-top: 13px;text-align:center;">Nill</div>
-             <div class="nill" style="margin-top: 7px;text-align:center;">Nill</div>
-             <div class="nill" style="margin-top: 7px;text-align:center;">Nill</div>
-             <div class="nill" style="margin-top: 7px;text-align:center;">Nill</div>
-          </div>
-         </div>
+        <table class="training-tb">
+          <tr>
+            <th style="font-size: 13px;">Description</th>
+            <th style="font-size: 13px;">Undertaken</th>
+            <th style="font-size: 13px;">Issue Date</th>
+            <th style="font-size: 13px;">Expairy Date</th>
+            <th style="font-size: 13px;">Remark</th>
+          </tr>
+          <tr style="width:267%;height: 1px;background: black;display: block;"></tr>
+          <tr>
+            <td style="padding-top: 10px;">Moving & Handaling</td>
+            <td style="padding-top: 10px;">Yes</td>
+            <td style="padding-top: 10px;">01-01-2020</td>
+            <td style="padding-top: 10px;">01-01-2021</td>
+            <td style="padding-top: 10px;">Good</td>
+          </tr>
+          <tr>
+            <td>First Aid & Basic Life Support</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>COSHH</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Equality & Diversity</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Health & Safety</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Fluid & Nutrition</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Fluid & Nutrition</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Infection Prevention</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
+          </tr>
+        </table>
       </div>
      </div>
    </div> 
