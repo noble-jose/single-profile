@@ -43,15 +43,14 @@
          margin-top: 27px;
      }
      .profile{
-         width: 94px;
-         height: 100px;
+         max-width: 94px;
+         max-height: 100px;
          float: right;
-         margin-right: 16px;
+         display: block;
+         margin-left: auto;
+         margin-right: 20px;
          margin-top: 27px;
-         background: url('omid-armin-qFKIqEaaw5A-unsplash.jpg');
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
+         margin-bottom: 0;
      }
      /* End head section */
       
@@ -69,7 +68,7 @@
      }
      .fname{
          float: right;
-         margin-right: 14px;
+         margin-right: 20px;
          font-size: 16px;
          font-weight: 700;
          color: #181378;
@@ -108,6 +107,12 @@
          font-weight: 700;
          margin-top: 20px;
      }
+     .heading1{
+         width: 95%;
+         font-size: 16px;
+         font-weight: 700;
+         margin-top: 20px;
+     }
      .clous{
          width: 100%;
      }
@@ -140,25 +145,34 @@
      .col p span{
          color: #545252;
      }
-    
-      .table-main{
-          width: 100%;
-          height: auto;
-          float: left;
-      }
-      table{
-          width: 98%;
-          padding-left: 16px;
-          margin-top: 10px;
-      }
-      th,td{
-          text-align: left;
-          font-size: 12px;
-          font-weight: 400;
-      }
-      .training-tb td{
-          height: 26px;
-      }
+     .table-main{
+         width: 100%;
+         float: left;
+         height: auto;
+         padding: 0 16px 0 16px;
+
+     }
+         table{
+             width: 98%;
+             margin-top: 15px;
+             float: left;
+             border-collapse: collapse;
+         }
+         .training-tb tr th{
+             font-size: 13px;
+             height: 35px;
+             font-weight: 700;
+             border-bottom: 1px solid #000;
+             
+         }
+         th,td{
+             text-align: left;
+             font-size: 12px;
+             font-weight: 400;
+         }
+         .training-tb td{
+             height: 25px;
+         }
       .confirm{
           float: left;
           width: 100%;
@@ -236,7 +250,7 @@
              text-align: justify;
              margin-top: 10px;
          }
-         .col p{
+          .col p{
               height: 26px;
           }
         .heading1 {
@@ -265,7 +279,7 @@
            <b>Web:</b> www.20x.demo.io <b style="padding-left: 5px;">Phone:</b> 06263014600
         </p>
        </div> 
-          <div class="profile"></div>
+          <img class="profile" src="pro-pic.png">
       </div>
       </div>
         
@@ -323,22 +337,21 @@
         
         
       <div class="table-main">
-        <div class="heading">QUALIFICATION AND TRAININGS</div>
+        <div class="heading1">QUALIFICATION AND TRAININGS</div>
         <table class="training-tb">
           <tr>
-            <th style="font-size: 13px;">Description</th>
-            <th style="font-size: 13px;">Undertaken</th>
-            <th style="font-size: 13px;">Issue Date</th>
-            <th style="font-size: 13px;">Expairy Date</th>
-            <th style="font-size: 13px;">Remark</th>
+            <th>Description</th>
+            <th>Undertaken</th>
+            <th>Issue Date</th>
+            <th>Expairy Date</th>
+            <th>Remark</th>
           </tr>
-          <tr style="width:267%;height: 1px;background: black;display: block;"></tr>
           <tr>
-            <td style="padding-top: 10px;">Moving & Handaling</td>
-            <td style="padding-top: 10px;">Yes</td>
-            <td style="padding-top: 10px;">01-01-2020</td>
-            <td style="padding-top: 10px;">01-01-2021</td>
-            <td style="padding-top: 10px;">Good</td>
+            <td>Moving & Handaling</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
           </tr>
           <tr>
             <td>First Aid & Basic Life Support</td>
@@ -389,7 +402,6 @@
             <td>01-01-2021</td>
             <td>Good</td>
           </tr>
-
         </table>
       </div>
     </div>
