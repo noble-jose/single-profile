@@ -3,6 +3,9 @@
  <link rel="preconnect" href="https://fonts.gstatic.com">
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
  <style>
+     *{
+         box-sizing: border-box;
+     }
      body{
          font-family: 'poppins', sans-serif;
          background: #E5E5E5;
@@ -28,13 +31,12 @@
          margin-left: 12px; 
      }
      .profile{
-         width: 141px;
-         height: 145px;
-         background: url('omid-armin-qFKIqEaaw5A-unsplash.jpg');
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         margin: 15px auto;
+         max-width: 141px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 15px;
+         margin-bottom: 19px;
      }
      .name, .position{
          width: 100%;
@@ -72,6 +74,7 @@
          font-weight: 400;
          padding: 10px;
          margin: 20px auto;
+         text-align: justify;
      }
      
      .right-main{
@@ -131,7 +134,6 @@
          color: #181378;
          font-weight: 700;
          font-size: 14px;
-         padding-left: 16px;
          margin-top: 15px;
      }
      .disclous{
@@ -166,30 +168,35 @@
          width: 100%;
          float: left;
          height: auto;
+         padding: 0 16px 0 16px;
+
      }
-      .table-main{
-          width: 100%;
-          height: auto;
-          float: left;
-      }
-      table{
-          width: 98%;
-          padding-left: 16px;
-          margin-top: 10px;
-      }
-      th,td{
-          text-align: left;
-          font-size: 12px;
-          font-weight: 400;
-      }
-      .training-tb td{
-          height: 28px;
-      }
+         table{
+             width: 98%;
+             margin-top: 15px;
+             float: left;
+             border-collapse: collapse;
+         }
+         .training-tb tr th{
+             font-size: 13px;
+             height: 35px;
+             font-weight: 700;
+             border-bottom: 1px solid #000;
+             
+         }
+         th,td{
+             text-align: left;
+             font-size: 12px;
+             font-weight: 400;
+         }
+         .training-tb td{
+             height: 25px;
+         }
      
 
      @page{
-         margin: 1em 1em 1em 6em;
-         size: A4 portrait;
+          margin: 1em 1em 1em 6em;
+/*          size: A4 portrait;*/
       }
       
      @media print{
@@ -203,6 +210,14 @@
          background-color: #fff;
          margin: auto;
          
+     }
+    .profile{
+         max-width: 141px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 15px;
+         margin-bottom: 17px;
      }
      .left-main{
          width: 30%;
@@ -220,13 +235,7 @@
          margin-top: 10px;
      }
      .profile{
-         width: 141px;
-         height: 145px;
-         background: url('omid-armin-qFKIqEaaw5A-unsplash.jpg');
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         margin: 15px auto;
+         max-width: 141px;
          -webkit-print-color-adjust:exact;
      }
      .right-bar {
@@ -244,15 +253,15 @@
          float: right;
          margin-top: -15.4px;
      }  
-     .nmc, .na {
-         width: 100%;
-         font-size: 13px;
-         color: #fff;
-         font-weight: 400;
-         padding-left: 15px;
-         padding-top: 5px;
-     }
-     p.confirm {
+.nmc, .na {
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+p.confirm {
     width: 95%;
     font-size: 12px;
     color: #fff;
@@ -271,8 +280,8 @@
     color: #181378;
     font-weight: 700;
     font-size: 14px;
-    padding-left: 16px;
-    margin-top: 25px;
+    padding-top: 20px;
+    
 }  
 
 .col {
@@ -295,7 +304,7 @@ table.training-tb{
    <div class="container">
      <div class="main">
       <div class="left-main">
-        <div class="profile"></div>
+        <img class="profile" src="pro-pic.png"/>
         <div class="left-bar"></div>
         <div class="name">Rosa Maria Alexander</div>
         <div class="position">Health Care Assistant</div>
@@ -390,19 +399,18 @@ table.training-tb{
         <div class="heading1">QUALIFICATION AND TRAININGS</div>
         <table class="training-tb">
           <tr>
-            <th style="font-size: 13px;">Description</th>
-            <th style="font-size: 13px;">Undertaken</th>
-            <th style="font-size: 13px;">Issue Date</th>
-            <th style="font-size: 13px;">Expairy Date</th>
-            <th style="font-size: 13px;">Remark</th>
+            <th>Description</th>
+            <th>Undertaken</th>
+            <th>Issue Date</th>
+            <th>Expairy Date</th>
+            <th>Remark</th>
           </tr>
-          <tr style="width:267%;height: 1px;background: black;display: block;"></tr>
           <tr>
-            <td style="padding-top: 10px;">Moving & Handaling</td>
-            <td style="padding-top: 10px;">Yes</td>
-            <td style="padding-top: 10px;">01-01-2020</td>
-            <td style="padding-top: 10px;">01-01-2021</td>
-            <td style="padding-top: 10px;">Good</td>
+            <td>Moving & Handaling</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
           </tr>
           <tr>
             <td>First Aid & Basic Life Support</td>
