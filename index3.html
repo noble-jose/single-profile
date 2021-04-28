@@ -11,10 +11,15 @@
                 font-family: 'Poppins', sans-serif;
             }
             .container{
-                width: 595px;
+                width: 800px;
                 height: 858px;
 /*                background: cyan;*/
                 margin: auto;
+            }
+            .inner{
+                width: 100%;
+                float: left;
+                padding: 0px 16px 0px 16px;
             }
             .top-bc{
                 width:100%;
@@ -47,26 +52,21 @@
                 float: left;
             }
             .profile-picture{
-                width: 133px;
-                height: 142px;
-                background: url('omid-armin-qFKIqEaaw5A-unsplash.jpg');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
+                max-width: 133px;
                 float: left;
                 margin-top: 10px;
-                margin-left: 16px;
+/*                margin-left: 16px;*/
             }
             .address{
                 float: right;
                 width: 100%;
             }
-            p.address-text{
+            .address p{
                 text-align: right;
                 padding-top: 0px;
                 font-size: 12px;
                 font-weight: 500;
-                padding-right: 16px;
+/*                padding-right: 16px;*/
             }
             .client-logo{
                 width: 100%;
@@ -77,7 +77,7 @@
                 max-height: 150px;
                 text-align: right;
                 float: right;
-                padding-right: 16px;
+/*                padding-right: 16px;*/
             }
             .part1, .part2{
                 width: 100%;
@@ -91,14 +91,14 @@
                 height: auto;
 /*                background: yellow;*/
                 float: left;
-                padding-left: 16px;
+/*                padding-left: 16px;*/
             }
             .col-nmc h4, .col-nmc1 h4{
                 font-weight: 400;
                 font-weight: 14px;
             }
             .col-nmc1{
-                width: 27%;
+                width: 31%;
                 height: auto;
 /*                background: green;*/
                 float: left;
@@ -110,7 +110,7 @@
                 font-size: 12px;
                 font-weight: 400;
                 text-align: justify;
-                padding: 0 16px 0 16px;
+/*                padding: 0 16px 0 16px;*/
                 line-height: 18px;
                 overflow: hidden;
 /*                background: cyan;*/
@@ -118,7 +118,7 @@
             .heading{
                 float: left;
                 width: 100%;
-                padding-left: 16px;
+/*                padding-left: 16px;*/
                 font-weight: 700;
                 font-size: 16px;
                 margin-top: 20px;
@@ -127,10 +127,10 @@
             .heading1{
                 float: left;
                 width: 100%;
-                padding-left: 16px;
+/*                padding-left: 16px;*/
                 font-weight: 700;
                 font-size: 16px;
-                margin-top: 20px;
+                margin-top: 26px;
                 color: #09B9A4;
 
             }
@@ -140,7 +140,7 @@
                 float: left;
             }
             .clouse-text p{
-                padding: 0 16px 0;
+/*                padding: 0 16px 0;*/
                 font-size: 12px;
                 font-weight: 400;
                 text-align: justify;
@@ -153,11 +153,10 @@
 /*                background: yellow;*/
             }
             .col{
-                width: 30%;
+                width: 33%;
                 height: 100px;
                 float: left;
 /*                background: red;*/
-                margin-left: 16px;
             }
             .col .col-txt{
                 width: 100%;
@@ -167,31 +166,40 @@
             .col .col-txt span{
                 color: #544E4E;
             }
-      .table-main{
-          width: 100%;
-          height: auto;
-          float: left;
-      }
-      table{
-          width: 98%;
-          padding-left: 16px;
-          margin-top: 50px;
-      }
-      th,td{
-          text-align: left;
-          font-size: 12px;
-          font-weight: 400;
-      }
-      .training-tb td{
-          height: 25px;
-      }
+            .table-main{
+                width: 100%;
+                height: auto;
+                float: left;
+            }
+            table{
+                width: 98%;
+/*                padding-left: 16px;*/
+                margin-top: 15px;
+                float: left;
+                border-collapse: collapse;
+            }
+            .training-tb tr th{
+                font-size: 13px;
+                height: 35px;
+                font-weight: 700;
+                border-bottom: 1px solid #000;
+                
+            }
+            th,td{
+                text-align: left;
+                font-size: 12px;
+                font-weight: 400;
+            }
+            .training-tb td{
+                height: 25px;
+            }
             
             
             
             /* for-page */
             @page{
                 margin: 1em 1em 1em 6em;
-                size: A4 portrait;
+            
             }
             
             /* Print */
@@ -215,13 +223,14 @@
     <body>
        <div class="container">
         <div class="top-bc"></div>
+        <div class="inner">
         <div class="main-head">
             <div class="head-left">
-                <div class="profile-picture"></div>
+                <img class="profile-picture" src="pro-pic.png"/>
             </div>
             <div class="head-right">
                 <div class="address">
-                <p class="address-text">
+                <p>
                    West Country Windows (Double Glazing) Ltd,<br>
                    36 Goldcroft,South Somerset,<br>
                    BA21 4DH, England.<br>
@@ -234,7 +243,7 @@
         <div class="part1">
            <div class="col-nmc">
             <h3>Rosa Maria Alexander</h3>
-            <h4>Helth Care Assistant</h4>
+            <h4>Health Care Assistant</h4>
            </div>
            <div class="col-nmc1">
             <h6>NMC Pin No.(If applicable)</h6>
@@ -257,41 +266,40 @@
            </div>
            <div class="clouse-detail">
              <div class="col">
-               <div class="col-txt">Right to Work: <span>UK</span></div>
-               <div class="col-txt">CRB/DBS Type: <span>Enhanced</span></div>
-               <div class="col-txt">NI Number: <span>0zhc126</span></div>
-               <div class="col-txt">DBS Result: <span>Clear</span></div>
+               <div class="col-txt"><b>Right to Work: </b><span>UK</span></div>
+               <div class="col-txt"><b>CRB/DBS Type: </b><span>Enhanced</span></div>
+               <div class="col-txt"><b>NI Number: </b><span>0zhc126</span></div>
+               <div class="col-txt"><b>DBS Result: </b><span>Clear</span></div>
              </div>
              <div class="col">
-               <div class="col-txt">DBS Number: <span>015541665</span></div>
-               <div class="col-txt">Driving License: <span>YES</span></div>
-               <div class="col-txt">Issue Date: <span>09-04-2021</span></div>
-               <div class="col-txt">Covid Vaccination1: <span>Value</span></div>
+               <div class="col-txt"><b>DBS Number: </b><span>015541665</span></div>
+               <div class="col-txt"><b>Driving License: </b><span>YES</span></div>
+               <div class="col-txt"><b>Issue Date: </b><span>09-04-2021</span></div>
+               <div class="col-txt"><b>Covid Vaccination1: </b><span>Value</span></div>
              </div>
              <div class="col">
-               <div class="col-txt">Proof of Address: <span>YES</span></div>
-               <div class="col-txt">Expairy Date: <span>09-04-2022</span></div>
-               <div class="col-txt">Reference: <span>YES</span></div>
-               <div class="col-txt">Covid Vaccination2: <span>Value</span></div>
+               <div class="col-txt"><b>Proof of Address: </b><span>YES</span></div>
+               <div class="col-txt"><b>Expairy Date: </b><span>09-04-2022</span></div>
+               <div class="col-txt"><b>Reference: </b><span>YES</span></div>
+               <div class="col-txt"><b>Covid Vaccination2: </b><span>Value</span></div>
              </div>
            </div>
       <div class="table-main">
         <div class="heading1">QUALIFICATION AND TRAININGS</div>
         <table class="training-tb">
           <tr>
-            <th style="font-size: 13px;">Description</th>
-            <th style="font-size: 13px;">Undertaken</th>
-            <th style="font-size: 13px;">Issue Date</th>
-            <th style="font-size: 13px;">Expairy Date</th>
-            <th style="font-size: 13px;">Remark</th>
+            <th>Description</th>
+            <th>Undertaken</th>
+            <th>Issue Date</th>
+            <th>Expairy Date</th>
+            <th>Remark</th>
           </tr>
-          <tr style="width:267%;height: 1px;background: black;display: block;"></tr>
           <tr>
-            <td style="padding-top: 10px;">Moving & Handaling</td>
-            <td style="padding-top: 10px;">Yes</td>
-            <td style="padding-top: 10px;">01-01-2020</td>
-            <td style="padding-top: 10px;">01-01-2021</td>
-            <td style="padding-top: 10px;">Good</td>
+            <td>Moving & Handaling</td>
+            <td>Yes</td>
+            <td>01-01-2020</td>
+            <td>01-01-2021</td>
+            <td>Good</td>
           </tr>
           <tr>
             <td>First Aid & Basic Life Support</td>
@@ -344,8 +352,9 @@
           </tr>
         </table>
       </div>
-        <div class="bottom-bc"></div>
+        </div>  
         </div>
+        <div class="bottom-bc"></div>
        </div>
     </body>
 </html>
