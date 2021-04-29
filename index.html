@@ -163,39 +163,44 @@
      .d2{
          width: 100%;
          color: #545252;
+         font-weight: 600;
      }
-     .table-main{
-         width: 100%;
-         float: left;
-         height: auto;
-         padding: 0 16px 0 16px;
-
-     }
-         table{
-             width: 98%;
-             margin-top: 15px;
-             float: left;
-             border-collapse: collapse;
-         }
-         .training-tb tr th{
-             font-size: 13px;
-             height: 35px;
-             font-weight: 700;
-             border-bottom: 1px solid #000;
-             
-         }
-         th,td{
-             text-align: left;
-             font-size: 12px;
-             font-weight: 400;
-         }
-         .training-tb td{
-             height: 25px;
-         }
-     
+            .table-main{
+                width: 100%;
+                height: auto;
+                float: left;
+                padding: 0px 16px 0px 16px; 
+            }
+            table{
+                width: 100%;
+/*                padding-left: 16px;*/
+                margin-top: 15px;
+                float: left;
+                border-collapse: collapse;
+                border: 1px solid #b2b2b2;
+            }
+            .training-tb tr th{
+                font-size: 13px;
+                height: 35px;
+                font-weight: 700;
+                border-bottom: 1px solid #b2b2b2;
+                
+            }
+            th,td{
+                text-align: left;
+                font-size: 12px;
+                font-weight: 400;
+                border: 1px solid #b2b2b2;
+            }
+            .training-tb td{
+                height: 25px;
+            }
+            th.data-center, td.data-center{
+                text-align: center;
+            }   
 
      @page{
-          margin: 1em 1em 1em 6em;
+          margin: 1em 1em 1em 2em;
 /*          size: A4 portrait;*/
       }
       
@@ -253,50 +258,52 @@
          float: right;
          margin-top: -15.4px;
      }  
-.nmc, .na {
-    width: 100%;
-    font-size: 13px;
-    color: #fff;
-    font-weight: 400;
-    padding-left: 15px;
-    padding-top: 5px;
-}
-p.confirm {
-    width: 95%;
-    font-size: 12px;
-    color: #fff;
-    font-weight: 400;
-    padding-left: 12px;
-    margin: 20px auto;
-}
-.heading {
-    color: #181378;
-    font-weight: 700;
-    font-size: 14px;
-    padding-left: 16px;
-    line-height: 57px;
-}
-.heading1 {
-    color: #181378;
-    font-weight: 700;
-    font-size: 14px;
-    padding-top: 20px;
-    
-}  
-
-.col {
-    width: 33%;
-    float: left;
-    margin-top: 10px;
-}
-.disclous {
-    font-weight: 400;
-    font-size: 12px;
-    margin-top: -10px;
-}
-table.training-tb{
-    margin-top: 20px;         
-}
+     .nmc, .na {
+         width: 100%;
+         font-size: 13px;
+         color: #fff;
+         font-weight: 400;
+         padding-left: 15px;
+         padding-top: 5px;
+     }
+     p.confirm {
+         width: 95%;
+         font-size: 12px;
+         color: #fff;
+         font-weight: 400;
+         padding-left: 12px;
+         margin: 20px auto;
+     }
+     .heading {
+         color: #181378;
+         font-weight: 700;
+         font-size: 14px;
+         padding-left: 16px;
+         line-height: 57px;
+     }
+     .heading1 {
+         color: #181378;
+         font-weight: 700;
+         font-size: 14px;
+         padding-top: 20px;
+         
+     }  
+     .col {
+         width: 33%;
+         float: left;
+         margin-top: 10px;
+     }
+    .disclous {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    table.training-tb{
+        margin-top: 20px;         
+    }
+    .training-tb td{
+        height: 35px;
+    }
      }
  </style>
 </head>
@@ -316,7 +323,7 @@ table.training-tb{
           <div class="na">N / A</div>
         </div>  
         <p class="confirm">
-          I confirm that the following information and document shave been obtained in respect of the above named person.
+          I confirm that the following information and document save been obtained in respect of the above named person.
         </p>
       </div> 
       <div class="right-main">
@@ -400,66 +407,66 @@ table.training-tb{
         <table class="training-tb">
           <tr>
             <th>Description</th>
-            <th>Undertaken</th>
-            <th>Issue Date</th>
-            <th>Expairy Date</th>
-            <th>Remark</th>
+            <th class="data-center">Undertaken</th>
+            <th class="data-center">Issue Date</th>
+            <th class="data-center">Expairy Date</th>
+            <th class="data-center">Remark</th>
           </tr>
           <tr>
             <td>Moving & Handaling</td>
-            <td>Yes</td>
-            <td>01-01-2020</td>
-            <td>01-01-2021</td>
-            <td>Good</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
           </tr>
           <tr>
             <td>First Aid & Basic Life Support</td>
-            <td>Yes</td>
-            <td>01-01-2020</td>
-            <td>01-01-2021</td>
-            <td>Good</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
           </tr>
           <tr>
             <td>COSHH</td>
-            <td>Yes</td>
-            <td>01-01-2020</td>
-            <td>01-01-2021</td>
-            <td>Good</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
           </tr>
           <tr>
             <td>Equality & Diversity</td>
-            <td>Yes</td>
-            <td>01-01-2020</td>
-            <td>01-01-2021</td>
-            <td>Good</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
           </tr>
           <tr>
             <td>Health & Safety</td>
-            <td>Yes</td>
-            <td>01-01-2020</td>
-            <td>01-01-2021</td>
-            <td>Good</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
           </tr>
           <tr>
             <td>Fluid & Nutrition</td>
-            <td>Yes</td>
-            <td>01-01-2020</td>
-            <td>01-01-2021</td>
-            <td>Good</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
           </tr>
           <tr>
             <td>Fluid & Nutrition</td>
-            <td>Yes</td>
-            <td>01-01-2020</td>
-            <td>01-01-2021</td>
-            <td>Good</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
           </tr>
           <tr>
             <td>Infection Prevention</td>
-            <td>Yes</td>
-            <td>01-01-2020</td>
-            <td>01-01-2021</td>
-            <td>Good</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
           </tr>
         </table>
       </div>
