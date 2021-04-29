@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?  family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                font-family: 'Poppins', sans-serif;
+            }
+            /* Styles go here */
+            
+            .page-header,
+            .page-header-space {
+                height: 100px;
+            }
+
+            .page-footer,
+            .page-footer-space {
+                height: 50px;
+            }
+            .page-header {
+                position: fixed;
+                top: 0mm;
+                height: 170px;
+                width: 100%;
+                background: #fff; /* for demo */
+                font-family: 'Poppins', sans-serif;
+            }
+            .container{
+                width: 100%;
+                background: #fff;
+            }
+            .head-main{
+                width: 800px;
+                height: 150px;
+                background: #ccc;
+                margin: auto;
+                padding: 27px 22px 0px 22px;
+            }
+            .left-col{
+                width: 35%;
+                float: left;
+                height: auto;
+/*                background: green;*/
+            }
+            .right-col{
+                width: 65%;
+                float: left;
+                height: auto;
+/*                background: red;*/
+            }
+            .pro-pic{
+                max-width: 139px;
+                max-height: 139px;
+                border-radius: 50%;
+            }
+            .address{
+                float: right;
+                width: 100%;
+            }
+            .address p{
+                text-align: right;
+                padding-top: 0px;
+                font-size: 12px;
+                font-weight: 500;
+/*                padding-right: 16px;*/
+            }
+            .client-logo{
+                width: 100%;
+                float: right;
+            }
+            .client-logo img{
+                max-width: 234px;
+                max-height: 150px;
+                text-align: right;
+                float: right;
+/*                padding-right: 16px;*/
+            }
+            .part1, .part2{
+                width: 100%;
+                height: auto;
+/*                background: red;*/
+                float: left;
+            }
+
+            .col-nmc{
+                width: 37%;
+                height: auto;
+/*                background: yellow;*/
+                float: left;
+/*                padding-left: 16px;*/
+            }
+            .col-nmc h4, .col-nmc1 h4{
+                font-weight: 400;
+                font-weight: 14px;
+                margin-top: -8px;
+            }
+            .col-nmc1{
+                width: 31%;
+                height: auto;
+/*                background: green;*/
+                float: left;
+                padding-left: 16px;
+            }
+            .confirm{
+                float: left;
+                width: 100%;
+                font-size: 12px;
+                font-weight: 400;
+                text-align: justify;
+/*                padding: 0 16px 0 16px;*/
+                line-height: 18px;
+                overflow: hidden;
+/*                background: cyan;*/
+            }
+
+
+            .page-data{
+                width: 800px;
+                height: 500px;
+                background: green;
+                margin: auto;
+            }
+
+            
+            
+            
+            .page {
+                page-break-after: always;
+            }
+
+            .container {
+                width: 1024px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            @page {
+                /* margin: 10mm */
+            }
+
+            @media print {
+                thead {
+                    display: table-header-group;
+                }
+                tfoot {
+                    display: table-footer-group;
+                }
+
+                button {
+                    display: none;
+                }
+
+                body {
+                    margin: 0;
+                }
+
+s
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-header">
+            <div class="container">
+                <div class="head-main">
+                    <div class="left-col">
+                        <img class="pro-pic" src="pro-pic1.png"/>
+                    </div>
+                    <div class="right-col">
+                    <div class="address">
+                        <p>
+                           West Country Windows (Double Glazing) Ltd,<br>
+                           36 Goldcroft,South Somerset,<br>
+                           BA21 4DH, England.<br>
+                           <b>Web:</b> www.20x.demo.io  <b>Tel:</b> 06263014600   
+                        </p>
+                </div>
+                <div class="client-logo"><img src="firstcare.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <!--place holder for the fixed-position header-->
+                            <div class="page-header-space"></div>
+                        </td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <!--*** CONTENT GOES HERE ***-->
+                            <div class="page">
+                             <div class="page-data">
+                                
+                                
+                             </div>
+                
+<!--
+        <div class="part2">
+           <div class="heading">DISCLOSURE BARRING SERVICE / PROOF OF IDENTITY</div>
+           <div class="clouse-text">
+            <p>
+            Firstcare 24 Ltd, is a registered body and therefore legally obliged to carry out an enhanced disclosure on all applicants in accordance with  the Rehabilitation of Offenders Act 1974. The above candidate has undergone a full enhanced disclosure and a positive employment decision has been made in line with our policies and procedures. In accordancewith the DBS (CRB) procedure Firstcare24 Ltd does not store a copy of the DBS (CRB) but we can provide you with the reference number and date of the DBS (CRB).   
+            </p>
+           </div>
+           <div class="clouse-detail">
+             <div class="col">
+               <div class="col-txt"><b>Right to Work: </b><span>UK</span></div>
+               <div class="col-txt"><b>CRB/DBS Type: </b><span>Enhanced</span></div>
+               <div class="col-txt"><b>NI Number: </b><span>0zhc126</span></div>
+               <div class="col-txt"><b>DBS Result: </b><span>Clear</span></div>
+             </div>
+             <div class="col">
+               <div class="col-txt"><b>DBS Number: </b><span>015541665</span></div>
+               <div class="col-txt"><b>Driving License: </b><span>YES</span></div>
+               <div class="col-txt"><b>Issue Date: </b><span>09-04-2021</span></div>
+               <div class="col-txt"><b>Covid Vaccination1: </b><span>Value</span></div>
+             </div>
+             <div class="col">
+               <div class="col-txt"><b>Proof of Address: </b><span>YES</span></div>
+               <div class="col-txt"><b>Expiry Date: </b><span>09-04-2022</span></div>
+               <div class="col-txt"><b>Reference: </b><span>YES</span></div>
+               <div class="col-txt"><b>Covid Vaccination2: </b><span>Value</span></div>
+             </div>
+           </div>
+      <div class="table-main">
+        <div class="heading1">QUALIFICATION AND TRAININGS</div>
+        <table class="training-tb">
+          <tr>
+            <th>Description</th>
+            <th class="data-center">Undertaken</th>
+            <th class="data-center">Issue Date</th>
+            <th class="data-center">Expiry Date</th>
+            <th class="data-center">Remark</th>
+          </tr>
+          <tr>
+            <td>Moving & Handaling</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
+          </tr>
+          <tr>
+            <td>First Aid & Basic Life Support</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
+          </tr>
+          <tr>
+            <td>COSHH</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
+          </tr>
+          <tr>
+            <td>Equality & Diversity</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
+          </tr>
+          <tr>
+            <td>Health & Safety</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
+          </tr>
+          <tr>
+            <td>Fluid & Nutrition</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
+          </tr>
+          <tr>
+            <td>Fluid & Nutrition</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
+          </tr>
+          <tr>
+            <td>Infection Prevention</td>
+            <td class="data-center">Yes</td>
+            <td class="data-center">01-01-2020</td>
+            <td class="data-center">01-01-2021</td>
+            <td class="data-center">Good</td>
+          </tr>
+        </table>
+      </div>
+        </div>  
+-->
+                            </div>
+                            <!--
+                            <div class="page"></div>
+                            <div class="page"></div>
+                            -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
