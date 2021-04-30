@@ -24,7 +24,7 @@
             .page-header {
                 position: fixed;
                 top: 0mm;
-                height: 170px;
+                height: 177px;
                 width: 100%;
                 background: #fff; /* for demo */
                 font-family: 'Poppins', sans-serif;
@@ -35,22 +35,19 @@
             }
             .head-main{
                 width: 800px;
+                background: #fff;
                 height: 150px;
-                background: #ccc;
                 margin: auto;
                 padding: 27px 22px 0px 22px;
             }
             .left-col{
                 width: 35%;
                 float: left;
-                height: auto;
-/*                background: green;*/
+
             }
             .right-col{
                 width: 65%;
                 float: left;
-                height: auto;
-/*                background: red;*/
             }
             .pro-pic{
                 max-width: 139px;
@@ -79,6 +76,13 @@
                 float: right;
 /*                padding-right: 16px;*/
             }
+            
+            .page-data{
+                width: 800px;
+                margin: 30px auto;
+                float: left;
+                padding: 27px 22px 0px 22px;
+            }
             .part1, .part2{
                 width: 100%;
                 height: auto;
@@ -87,7 +91,7 @@
             }
 
             .col-nmc{
-                width: 37%;
+                width: 43%;
                 height: auto;
 /*                background: yellow;*/
                 float: left;
@@ -99,7 +103,7 @@
                 margin-top: -8px;
             }
             .col-nmc1{
-                width: 31%;
+                width: 26%;
                 height: auto;
 /*                background: green;*/
                 float: left;
@@ -114,17 +118,97 @@
 /*                padding: 0 16px 0 16px;*/
                 line-height: 18px;
                 overflow: hidden;
+                letter-spacing: 0.08em;
 /*                background: cyan;*/
             }
-
-
-            .page-data{
-                width: 800px;
-                height: 500px;
-                background: green;
-                margin: auto;
+            .part2{
+                margin-top: 19px;
             }
+            .heading{
+                float: left;
+                width: 100%;
+/*                padding-left: 16px;*/
+                font-weight: 700;
+                font-size: 16px;
+                margin-top: 20px;
+                color: #09B9A4;
+            }
+            .heading1{
+                float: left;
+                width: 100%;
+/*                padding-left: 16px;*/
+                font-weight: 700;
+                font-size: 16px;
+                margin-top: 26px;
+                color: #09B9A4;
 
+            }
+            .clouse-text{
+                width: 100%;
+                float: left;
+            }
+            .clouse-text p{
+/*                padding: 0 16px 0;*/
+                font-size: 12px;
+                font-weight: 400;
+                text-align: justify;
+                line-height: 18px;
+            }
+            .clouse-detail{
+                width: 100%;
+                float: left;
+                margin-top: 12px;
+/*                background: yellow;*/
+            }
+            .col{
+                width: 33%;
+                float: left;
+/*                background: red;*/
+            }
+            .col .col-txt{
+                width: 100%;
+                font-size: 12px;
+                height: 30px;
+            }
+            .col .col-txt span{
+                color: #544E4E;
+                font-weight: 600;
+            } 
+            .table-main{
+                width: 100%;
+                height: auto;
+                float: left;
+            }
+            .training-tb{
+                width: 100%;
+/*                padding-left: 16px;*/
+                margin-top: 15px;
+                float: left;
+                border-collapse: collapse;
+                border: 1px solid #b2b2b2;
+            }
+            .training-tb tr th{
+                font-size: 13px;
+                height: 35px;
+                font-weight: 700;
+                border-bottom: 1px solid #b2b2b2;
+                
+            }
+            .training-tb th, .training-tb td{
+                text-align: left;
+                font-size: 12px;
+                font-weight: 400;
+                border: 1px solid #b2b2b2;
+            }
+            .training-tb td{
+                height: 25px;
+            }
+            th.data-center, td.data-center{
+                text-align: center;
+            }            
+
+            
+            
             
             
             
@@ -133,16 +217,18 @@
             }
 
             .container {
-                width: 1024px;
-                height: auto;
+                width: 800px;
                 margin: 0 auto;
             }
 
             @page {
-                /* margin: 10mm */
+                margin: 1em 2em 1em 1em;
             }
 
             @media print {
+                .page-data {
+                    margin: 40px auto;
+                }
                 thead {
                     display: table-header-group;
                 }
@@ -201,108 +287,121 @@ s
                             <!--*** CONTENT GOES HERE ***-->
                             <div class="page">
                              <div class="page-data">
-                                
-                                
+                                <div class="part1">
+                                   <div class="col-nmc">
+                                    <h3>Rosa Maria Alexander</h3>
+                                    <h4>Health Care Assistant</h4>
+                                   </div>
+                                   <div class="col-nmc1">
+                                    <h6>NMC Pin No.(If applicable)</h6>
+                                    <h4>N / A</h4>
+                                   </div>
+                                   <div class="col-nmc1">
+                                    <h6>Renewal Date.(If Applicable)</h6>
+                                    <h4>N / A</h4>
+                                   </div>
+                                   <div class="confirm">
+                                     I confirm that the following information and document save been obtained in respect of the above named person.
+                                   </div>
+                                </div> 
+                                <div class="part2">
+                                   <div class="heading">DISCLOSURE BARRING SERVICE / PROOF OF IDENTITY</div>
+                                   <div class="clouse-text">
+                                    <p>
+                                    Firstcare 24 Ltd, is a registered body and therefore legally obliged to carry out an enhanced disclosure on all applicants in accordance with  the Rehabilitation of Offenders Act 1974. The above candidate has undergone a full enhanced disclosure and a positive employment decision has been made in line with our policies and procedures. In accordancewith the DBS (CRB) procedure Firstcare24 Ltd does not store a copy of the DBS (CRB) but we can provide you with the reference number and date of the DBS (CRB).   
+                                    </p>
+                                   </div>
+                                   <div class="clouse-detail">
+                                     <div class="col">
+                                       <div class="col-txt"><b>Right to Work: </b><span>UK</span></div>
+                                       <div class="col-txt"><b>CRB/DBS Type: </b><span>Enhanced</span></div>
+                                       <div class="col-txt"><b>NI Number: </b><span>0zhc126</span></div>
+                                       <div class="col-txt"><b>DBS Result: </b><span>Clear</span></div>
+                                     </div>
+                                     <div class="col">
+                                       <div class="col-txt"><b>DBS Number: </b><span>015541665</span></div>
+                                       <div class="col-txt"><b>Driving License: </b><span>YES</span></div>
+                                       <div class="col-txt"><b>Issue Date: </b><span>09-04-2021</span></div>
+                                       <div class="col-txt"><b>Covid Vaccination1: </b><span>Value</span></div>
+                                     </div>
+                                     <div class="col">
+                                       <div class="col-txt"><b>Proof of Address: </b><span>YES</span></div>
+                                       <div class="col-txt"><b>Expiry Date: </b><span>09-04-2022</span></div>
+                                       <div class="col-txt"><b>Reference: </b><span>YES</span></div>
+                                       <div class="col-txt"><b>Covid Vaccination2: </b><span>Value</span></div>
+                                     </div>
+                                   </div>
+                              <div class="table-main">
+                                <div class="heading1">QUALIFICATION AND TRAININGS</div>
+                                <table class="training-tb">
+                                  <tr>
+                                    <th>Description</th>
+                                    <th class="data-center">Undertaken</th>
+                                    <th class="data-center">Issue Date</th>
+                                    <th class="data-center">Expiry Date</th>
+                                    <th class="data-center">Remark</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Moving & Handaling</td>
+                                    <td class="data-center">Yes</td>
+                                    <td class="data-center">01-01-2020</td>
+                                    <td class="data-center">01-01-2021</td>
+                                    <td class="data-center">Good</td>
+                                  </tr>
+                                  <tr>
+                                    <td>First Aid & Basic Life Support</td>
+                                    <td class="data-center">Yes</td>
+                                    <td class="data-center">01-01-2020</td>
+                                    <td class="data-center">01-01-2021</td>
+                                    <td class="data-center">Good</td>
+                                  </tr>
+                                  <tr>
+                                    <td>COSHH</td>
+                                    <td class="data-center">Yes</td>
+                                    <td class="data-center">01-01-2020</td>
+                                    <td class="data-center">01-01-2021</td>
+                                    <td class="data-center">Good</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Equality & Diversity</td>
+                                    <td class="data-center">Yes</td>
+                                    <td class="data-center">01-01-2020</td>
+                                    <td class="data-center">01-01-2021</td>
+                                    <td class="data-center">Good</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Health & Safety</td>
+                                    <td class="data-center">Yes</td>
+                                    <td class="data-center">01-01-2020</td>
+                                    <td class="data-center">01-01-2021</td>
+                                    <td class="data-center">Good</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Fluid & Nutrition</td>
+                                    <td class="data-center">Yes</td>
+                                    <td class="data-center">01-01-2020</td>
+                                    <td class="data-center">01-01-2021</td>
+                                    <td class="data-center">Good</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Fluid & Nutrition</td>
+                                    <td class="data-center">Yes</td>
+                                    <td class="data-center">01-01-2020</td>
+                                    <td class="data-center">01-01-2021</td>
+                                    <td class="data-center">Good</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Infection Prevention</td>
+                                    <td class="data-center">Yes</td>
+                                    <td class="data-center">01-01-2020</td>
+                                    <td class="data-center">01-01-2021</td>
+                                    <td class="data-center">Good</td>
+                                  </tr>
+                                </table>
+                              </div>
+                                </div>                                  
                              </div>
                 
-<!--
-        <div class="part2">
-           <div class="heading">DISCLOSURE BARRING SERVICE / PROOF OF IDENTITY</div>
-           <div class="clouse-text">
-            <p>
-            Firstcare 24 Ltd, is a registered body and therefore legally obliged to carry out an enhanced disclosure on all applicants in accordance with  the Rehabilitation of Offenders Act 1974. The above candidate has undergone a full enhanced disclosure and a positive employment decision has been made in line with our policies and procedures. In accordancewith the DBS (CRB) procedure Firstcare24 Ltd does not store a copy of the DBS (CRB) but we can provide you with the reference number and date of the DBS (CRB).   
-            </p>
-           </div>
-           <div class="clouse-detail">
-             <div class="col">
-               <div class="col-txt"><b>Right to Work: </b><span>UK</span></div>
-               <div class="col-txt"><b>CRB/DBS Type: </b><span>Enhanced</span></div>
-               <div class="col-txt"><b>NI Number: </b><span>0zhc126</span></div>
-               <div class="col-txt"><b>DBS Result: </b><span>Clear</span></div>
-             </div>
-             <div class="col">
-               <div class="col-txt"><b>DBS Number: </b><span>015541665</span></div>
-               <div class="col-txt"><b>Driving License: </b><span>YES</span></div>
-               <div class="col-txt"><b>Issue Date: </b><span>09-04-2021</span></div>
-               <div class="col-txt"><b>Covid Vaccination1: </b><span>Value</span></div>
-             </div>
-             <div class="col">
-               <div class="col-txt"><b>Proof of Address: </b><span>YES</span></div>
-               <div class="col-txt"><b>Expiry Date: </b><span>09-04-2022</span></div>
-               <div class="col-txt"><b>Reference: </b><span>YES</span></div>
-               <div class="col-txt"><b>Covid Vaccination2: </b><span>Value</span></div>
-             </div>
-           </div>
-      <div class="table-main">
-        <div class="heading1">QUALIFICATION AND TRAININGS</div>
-        <table class="training-tb">
-          <tr>
-            <th>Description</th>
-            <th class="data-center">Undertaken</th>
-            <th class="data-center">Issue Date</th>
-            <th class="data-center">Expiry Date</th>
-            <th class="data-center">Remark</th>
-          </tr>
-          <tr>
-            <td>Moving & Handaling</td>
-            <td class="data-center">Yes</td>
-            <td class="data-center">01-01-2020</td>
-            <td class="data-center">01-01-2021</td>
-            <td class="data-center">Good</td>
-          </tr>
-          <tr>
-            <td>First Aid & Basic Life Support</td>
-            <td class="data-center">Yes</td>
-            <td class="data-center">01-01-2020</td>
-            <td class="data-center">01-01-2021</td>
-            <td class="data-center">Good</td>
-          </tr>
-          <tr>
-            <td>COSHH</td>
-            <td class="data-center">Yes</td>
-            <td class="data-center">01-01-2020</td>
-            <td class="data-center">01-01-2021</td>
-            <td class="data-center">Good</td>
-          </tr>
-          <tr>
-            <td>Equality & Diversity</td>
-            <td class="data-center">Yes</td>
-            <td class="data-center">01-01-2020</td>
-            <td class="data-center">01-01-2021</td>
-            <td class="data-center">Good</td>
-          </tr>
-          <tr>
-            <td>Health & Safety</td>
-            <td class="data-center">Yes</td>
-            <td class="data-center">01-01-2020</td>
-            <td class="data-center">01-01-2021</td>
-            <td class="data-center">Good</td>
-          </tr>
-          <tr>
-            <td>Fluid & Nutrition</td>
-            <td class="data-center">Yes</td>
-            <td class="data-center">01-01-2020</td>
-            <td class="data-center">01-01-2021</td>
-            <td class="data-center">Good</td>
-          </tr>
-          <tr>
-            <td>Fluid & Nutrition</td>
-            <td class="data-center">Yes</td>
-            <td class="data-center">01-01-2020</td>
-            <td class="data-center">01-01-2021</td>
-            <td class="data-center">Good</td>
-          </tr>
-          <tr>
-            <td>Infection Prevention</td>
-            <td class="data-center">Yes</td>
-            <td class="data-center">01-01-2020</td>
-            <td class="data-center">01-01-2021</td>
-            <td class="data-center">Good</td>
-          </tr>
-        </table>
-      </div>
-        </div>  
--->
                             </div>
                             <!--
                             <div class="page"></div>
