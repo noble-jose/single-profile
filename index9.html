@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff Profile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?  family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <style>
+            * {
+                box-sizing: border-box; 
+            }
+            body{
+                font-family: 'Poppins', sans-serif;
+            }
+            /* Styles go here */
+            .page-header, .page-header-space {
+              height: 119px;
+            }
+
+            .page-footer, .page-footer-space {
+              height: 50px;
+
+            }
+
+            .page-footer {
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+              background: #fff; /* for demo */
+            }
+
+            .page-header {
+              position: fixed;
+              top: 0mm;
+              width: 100%;
+              background: #fff; /* for demo */
+              text-align: center
+            }
+            
+            /* custom style */
+            
+            .container{
+                width: 800px;
+                height: 130px;
+                background: #fff;
+                margin: auto;
+                padding: 16px;
+            }
+            .address{
+                float: left;
+                width:40%;
+                font-size: 12px;
+                font-weight: 400;
+                text-align: left;
+            }
+            .client-logo{
+                float: left;
+                width: 60%;
+            }
+            .client-logo img{
+                max-width: 200px;
+                float: right;
+                margin-top: 10px;
+            }
+            
+            .page-footer .container{
+                width: 800px;
+                margin: auto;
+                padding: 16px;
+            }
+            .page-footer .container p{
+                font-size: 12px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .page-data{
+                width: 775px;
+                margin: 30px auto;
+                float: left;
+                height:200px;
+/*                padding: 27px 22px 0px 22px;*/
+            }
+            .page-data h3{
+                text-align: center;
+            }
+            .left, .center{
+                float: left;
+                width: 40%;
+            }
+            .right{
+                float: left;
+                width: 20%;
+            }
+            .right img{
+                max-width: 160px;
+            }
+            .left-child{
+                width: 100%;
+                height: 40px;
+            }
+            h3.heading{
+                width: 100%;
+                float: left;
+                text-align: left;
+            }
+            .tb-main{
+                float: left;
+                width: 100%;
+                text-align: left;
+                font-size: 14px;
+                font-weight: 500px;
+                border-collapse: collapse;
+
+            }
+            .tb-bd{
+                height: 40px;
+                padding-top: 10px;
+            }
+            .tb-hdr{
+                background: rgba(211, 209, 209, 0.4);
+                height: 45px;
+                border-collapse: collapse;
+            }
+            .hd-left{
+                text-align: left;
+                padding-left: 10px;
+            }
+            .hd-center{
+                text-align: center;
+            }
+            
+            
+            
+            
+
+            .page {
+              page-break-after: always;
+            }
+
+            @page {
+              margin: 1em 1em 1em 2em;
+            }
+
+            @media print {
+               thead {display: table-header-group;} 
+               tfoot {display: table-footer-group;}
+
+                
+                .container{
+                    width: 100%;
+                }
+                .tb-hdr{
+                    background: rgba(211, 209, 209, 0.4);
+                    height: 45px;
+                    border-collapse: collapse;
+                    -webkit-print-color-adjust:exact; 
+                }
+                
+                .page-footer .container p{
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+   <div class="page-header">
+       <div class="container">
+            <div class="address">
+              <p>
+                First Care 24 Limited,<br>
+                Winton House, Stoke Road,<br>
+                STOKE-ON-TRENT, ST4 2RW<br>
+                <b>Ph: </b>0177775252, 0780000365, 366<br>
+                <b>Email: </b>info@firstcare24.co.uk, admin@firstcare24.co.uk<br>
+                <b>Website: </b>www.firstcare24.co.uk
+              </p>
+            </div>
+            <div class="client-logo">
+                <img src="firstcare.png"/>
+            </div>
+       </div>
+   </div>
+
+  <div class="page-footer">
+    <div class="container">
+      <p>Care Pluse Recruitment</p>
+    </div>
+  </div>
+
+  <div class="container">
+  <table>
+
+    <thead>
+      <tr>
+        <td>
+          <!--place holder for the fixed-position header-->
+          <div class="page-header-space"></div>
+        </td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          <!--*** CONTENT GOES HERE ***-->
+          
+          <div class="page">
+            <div class="page-data">
+            <h3>Staff Profile</h3>
+            
+            <h3 class="heading">Basic Detail</h3>
+            <div class="left">
+              <div class="left-child"><b>Designation: </b>Health Care Assistant</div>  
+              <div class="left-child"><b>Surname: </b>Jone Wick</div>  
+              <div class="left-child"><b>Forename: </b>Wick</div>  
+              <div class="left-child"><b>NMC Pin No.: </b>N / A</div>  
+            </div>
+            <div class="center">
+              <div class="left-child"><b>D.O.B: </b>01-02-0000</div>  
+                <div class="left-child"><b>Phone Number: </b>096202566</div>  
+              <div class="left-child"><b>NMC Pin: </b>N / A</div>  
+            </div>
+            <div class="right">
+              <div class="left-child"><img src="pro-pic1.png"></div>  
+            </div>
+                
+            <h3 class="heading">DBS and RTW</h3>
+            <div class="left">
+              <div class="left-child"><b>DBS Date of Issue: </b>01-01-2020</div>  
+              <div class="left-child"><b>DBS Disclosure No: </b>GE3589TF</div>  
+              <div class="left-child"><b>Nationality: </b>UK</div>  
+            </div>
+            <div class="center">
+              <div class="left-child"><b>Declaration of Conviction: </b>01-02-2021</div>  
+              <div class="left-child"><b>Right to work in UK: </b>Yes</div>  
+            </div>
+                
+            <h3 class="heading">Training Details</h3>
+            <table class="tb-main">
+            <tr class="tb-hdr">
+                <th class="hd-left">Training</th>    
+                <th class="hd-center">Date</th>    
+                <th class="hd-center">Date Till</th>    
+            </tr>    
+            <tr class="tb-bd">
+                <td class="hd-left">Moving and Handling</td>    
+                <td class="hd-center">01-01-2020</td>    
+                <td class="hd-center">01-01-2021</td>    
+            </tr>    
+            <tr class="tb-bd">
+                <td class="hd-left">Training</td>    
+                <td class="hd-center">01-01-2020</td>    
+                <td class="hd-center">01-01-2021</td>    
+            </tr>    
+            <tr class="tb-bd">
+                <td class="hd-left">COSHH</td>    
+                <td class="hd-center">01-01-2020</td>    
+                <td class="hd-center">01-01-2021</td>    
+            </tr>    
+            <tr class="tb-bd">
+                <td class="hd-left">Equality and Safety</td>    
+                <td class="hd-center">01-01-2020</td>    
+                <td class="hd-center">01-01-2021</td>    
+            </tr>    
+            <tr class="tb-bd">
+                <td class="hd-left">Health and Safety</td>    
+                <td class="hd-center">01-01-2020</td>    
+                <td class="hd-center">01-01-2021</td>    
+            </tr>    
+            <tr class="tb-bd">
+                <td class="hd-left">Food Hygine</td>    
+                <td class="hd-center">01-01-2020</td>    
+                <td class="hd-center">01-01-2021</td>    
+            </tr>    
+            <tr class="tb-bd">
+                <td class="hd-left">Fluid and Nutrition</td>    
+                <td class="hd-center">01-01-2020</td>    
+                <td class="hd-center">01-01-2021</td>    
+            </tr>    
+            <tr class="tb-bd">
+                <td class="hd-left">Infection Preventation</td>    
+                <td class="hd-center">01-01-2020</td>    
+                <td class="hd-center">01-01-2021</td>    
+            </tr>    
+            </table>
+                
+            <h3 class="heading">Specialist Skills Experience</h3>
+            <div class="left">
+              <div class="left-child"><b>Dementia Care : </b>Yes</div>  
+              <div class="left-child"><b>End of Life Care: </b>Yes</div>  
+              <div class="left-child"><b>Tissue Viability: </b>Yes</div>  
+              <div class="left-child"><b>Catheter Care: </b>Yes</div>  
+              <div class="left-child"><b>Medication Administration: </b>No</div>  
+            </div>
+            <div class="center">
+              <div class="left-child"><b>PEG: </b>N / A</div>  
+              <div class="left-child"><b>Syringe Driver: </b>N / A</div>  
+              <div class="left-child"><b>Anti - Ligature: </b>N / A</div>  
+              <div class="left-child"><b>Lone Worker and Self Harm: </b>N / A</div>  
+              <div class="left-child"><b>Basic Observations </b>N / A</div>  
+            </div>
+
+            <h3 class="heading">Declaration</h3>
+            <div class="left">
+              <div class="left-child"><b>Form Completed By: </b>Sony Sam</div>  
+              <div class="left-child"><b>Position: </b>Recruitment Coordinator</div>  
+            </div>
+            <div class="center">
+              <div class="left-child"><b>Signature: </b></div>  
+              <div class="left-child"><b>Date: </b>01-01-2021</div>   
+            </div>
+            </div>
+        </div>
+        </td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td>
+          <!--place holder for the fixed-position footer-->
+          <div class="page-footer-space"></div>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>
+
+    </body>
+</html>
